@@ -1,3 +1,5 @@
 const sample = (param) => {
-  const txt = "HELLO MASTER!"
+  const txt = "HELLO NEW MASTER!"
+
+  const age = 42
 }
