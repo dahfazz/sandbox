@@ -10,26 +10,28 @@
             background-color: #121212;
             color: #e0e0e0;
             margin: 0;
-            padding: 20px;
+            padding: 10px; /* Reduced padding */
             box-sizing: border-box;
         }
         h1 {
             color: #bb86fc;
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 20px; /* Reduced margin */
+            font-size: 1.8em; /* Slightly smaller for mobile */
         }
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 15px; /* Reduced margin */
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Slightly smaller shadow */
             background-color: #1e1e1e;
         }
         th, td {
-            padding: 12px;
+            padding: 8px; /* Reduced padding */
             text-align: left;
             border-bottom: 1px solid #333;
-            word-wrap: break-word; /* Ensures long content wraps */
+            word-wrap: break-word;
+            font-size: 0.9em; /* Slightly smaller font */
         }
         th {
             background-color: #3700b3;
@@ -53,7 +55,8 @@
             color: #bb86fc;
             font-weight: bold;
             text-align: center;
-            padding: 10px;
+            padding: 8px; /* Reduced padding */
+            font-size: 1.1em;
         }
 
         /* Responsive adjustments for smaller screens */
@@ -67,30 +70,31 @@
                 left: -9999px;
             }
             tr {
-                margin-bottom: 15px;
+                margin-bottom: 10px; /* Reduced margin */
                 border: 1px solid #444;
-                border-radius: 8px;
+                border-radius: 6px; /* Slightly smaller radius */
                 overflow: hidden;
             }
             td {
                 border: none;
                 position: relative;
-                padding-left: 50%;
+                padding-left: 45%; /* Adjusted padding */
                 text-align: right;
             }
             td::before {
                 content: attr(data-label);
                 position: absolute;
                 left: 6px;
-                width: 45%;
+                width: 40%; /* Adjusted width */
                 padding-right: 10px;
                 white-space: nowrap;
                 text-align: left;
                 font-weight: bold;
                 color: #bb86fc;
+                font-size: 0.9em; /* Consistent font size */
             }
             .city-header {
-                border-radius: 8px 8px 0 0;
+                border-radius: 6px 6px 0 0; /* Consistent radius */
             }
         }
     </style>
@@ -102,11 +106,10 @@
     <table>
         <thead>
             <tr>
-                <th colspan="5" class="city-header">Ashford</th>
+                <th colspan="4" class="city-header">Ashford</th>
             </tr>
             <tr>
                 <th>Nom du Restaurant</th>
-                <th>Téléphone</th>
                 <th>Page Google</th>
                 <th>Note (sur 5)</th>
                 <th>Site Web</th>
@@ -115,21 +118,18 @@
         <tbody>
             <tr>
                 <td data-label="Nom du Restaurant">Singleton Barn</td>
-                <td data-label="Téléphone">01233 662814 (example, check website)</td>
                 <td data-label="Page Google"><a href="https://www.google.com/maps/search/Singleton+Barn+Ashford" target="_blank">Voir sur Google Maps</a></td>
                 <td data-label="Note (sur 5)">4.2 (basé sur Google Reviews)</td>
                 <td data-label="Site Web"><a href="https://www.singletonbarn.co.uk/" target="_blank">singletonbarn.co.uk</a></td>
             </tr>
             <tr>
                 <td data-label="Nom du Restaurant">Frankie & Benny's Ashford</td>
-                <td data-label="Téléphone">01233 662814</td>
                 <td data-label="Page Google"><a href="https://www.google.com/maps/search/Frankie+%26+Benny's+Ashford" target="_blank">Voir sur Google Maps</a></td>
                 <td data-label="Note (sur 5)">3.8 (basé sur Google Reviews)</td>
                 <td data-label="Site Web"><a href="https://www.frankieandbennys.com/restaurants/ashford" target="_blank">frankieandbennys.com</a></td>
             </tr>
             <tr>
                 <td data-label="Nom du Restaurant">The Swan & Dog</td>
-                <td data-label="Téléphone">01233 621456 (example, check website)</td>
                 <td data-label="Page Google"><a href="https://www.google.com/maps/search/The+Swan+%26+Dog+Ashford" target="_blank">Voir sur Google Maps</a></td>
                 <td data-label="Note (sur 5)">4.4 (basé sur Google Reviews)</td>
                 <td data-label="Site Web"><a href="https://www.swananddog.co.uk/" target="_blank">swananddog.co.uk</a></td>
@@ -140,11 +140,10 @@
     <table>
         <thead>
             <tr>
-                <th colspan="5" class="city-header">Bournemouth</th>
+                <th colspan="4" class="city-header">Bournemouth</th>
             </tr>
             <tr>
                 <th>Nom du Restaurant</th>
-                <th>Téléphone</th>
                 <th>Page Google</th>
                 <th>Note (sur 5)</th>
                 <th>Site Web</th>
@@ -153,24 +152,21 @@
         <tbody>
             <tr>
                 <td data-label="Nom du Restaurant">Harvester Cooper Dean</td>
-                <td data-label="Téléphone">01202 397927</td>
                 <td data-label="Page Google"><a href="https://www.google.com/maps/search/Harvester+Cooper+Dean+Bournemouth" target="_blank">Voir sur Google Maps</a></td>
                 <td data-label="Note (sur 5)">3.9 (basé sur Google Reviews)</td>
                 <td data-label="Site Web"><a href="https://www.harvester.co.uk/restaurants/southwest/thecooperdeanbournemouth" target="_blank">harvester.co.uk</a></td>
             </tr>
             <tr>
                 <td data-label="Nom du Restaurant">The Iford Bridge (Sizzling Pubs)</td>
-                <td data-label="Téléphone">01202 483387</td>
                 <td data-label="Page Google"><a href="https://www.google.com/maps/search/The+Iford+Bridge+Bournemouth" target="_blank">Voir sur Google Maps</a></td>
                 <td data-label="Note (sur 5)">4.0 (basé sur Google Reviews)</td>
                 <td data-label="Site Web"><a href="https://www.sizzlingpubs.co.uk/findapub/southwest/theifordbridgebournemouth" target="_blank">sizzlingpubs.co.uk</a></td>
             </tr>
             <tr>
                 <td data-label="Nom du Restaurant">Chez Fred</td>
-                <td data-label="Téléphone">01202 761023</td>
                 <td data-label="Page Google"><a href="https://www.google.com/maps/search/Chez+Fred+Bournemouth" target="_blank">Voir sur Google Maps</a></td>
                 <td data-label="Note (sur 5)">4.6 (basé sur Google Reviews)</td>
-                <td data-label="Site Web">Non spécifié (souvent info sur leur page FB ou annuaire local)</td>
+                <td data-label="Site Web">Non spécifié</td>
             </tr>
         </tbody>
     </table>
@@ -178,11 +174,10 @@
     <table>
         <thead>
             <tr>
-                <th colspan="5" class="city-header">Timsbury</th>
+                <th colspan="4" class="city-header">Timsbury</th>
             </tr>
             <tr>
                 <th>Nom du Restaurant</th>
-                <th>Téléphone</th>
                 <th>Page Google</th>
                 <th>Note (sur 5)</th>
                 <th>Site Web</th>
@@ -191,14 +186,12 @@
         <tbody>
             <tr>
                 <td data-label="Nom du Restaurant">Seven Stars Timsbury</td>
-                <td data-label="Téléphone">01761 253293</td>
                 <td data-label="Page Google"><a href="https://www.google.com/maps/search/Seven+Stars+Timsbury" target="_blank">Voir sur Google Maps</a></td>
                 <td data-label="Note (sur 5)">4.3 (basé sur OpenTable/Google Reviews)</td>
                 <td data-label="Site Web"><a href="https://www.thesevenstarstimsbury.co.uk/" target="_blank">thesevenstarstimsbury.co.uk</a></td>
             </tr>
             <tr>
                 <td data-label="Nom du Restaurant">The Pig - near Bath (Midsomer Norton/Timsbury area)</td>
-                <td data-label="Téléphone">01761 490490 (central reservations, confirm for Bath location)</td>
                 <td data-label="Page Google"><a href="https://www.google.com/maps/search/The+Pig+near+Bath+Timsbury" target="_blank">Voir sur Google Maps</a></td>
                 <td data-label="Note (sur 5)">4.6 (basé sur Google Reviews)</td>
                 <td data-label="Site Web"><a href="https://www.thepighotel.com/near-bath/" target="_blank">thepighotel.com/near-bath</a></td>
@@ -209,11 +202,10 @@
     <table>
         <thead>
             <tr>
-                <th colspan="5" class="city-header">Carterton</th>
+                <th colspan="4" class="city-header">Carterton</th>
             </tr>
             <tr>
                 <th>Nom du Restaurant</th>
-                <th>Téléphone</th>
                 <th>Page Google</th>
                 <th>Note (sur 5)</th>
                 <th>Site Web</th>
@@ -222,21 +214,18 @@
         <tbody>
             <tr>
                 <td data-label="Nom du Restaurant">The Angel at Burford (Proche de Carterton)</td>
-                <td data-label="Téléphone">01993 822714 (example, check website)</td>
                 <td data-label="Page Google"><a href="https://www.google.com/maps/search/The+Angel+at+Burford" target="_blank">Voir sur Google Maps</a></td>
                 <td data-label="Note (sur 5)">4.7 (basé sur OpenTable)</td>
                 <td data-label="Site Web"><a href="https://www.angelatburford.co.uk/" target="_blank">angelatburford.co.uk</a></td>
             </tr>
             <tr>
                 <td data-label="Nom du Restaurant">The Shilton Rose & Crown (Proche de Carterton)</td>
-                <td data-label="Téléphone">01993 841285 (example, check website)</td>
                 <td data-label="Page Google"><a href="https://www.google.com/maps/search/The+Shilton+Rose+%26+Crown" target="_blank">Voir sur Google Maps</a></td>
                 <td data-label="Note (sur 5)">4.9 (basé sur OpenTable)</td>
-                <td data-label="Site Web">Non spécifié (souvent info sur leur page FB ou annuaire local)</td>
+                <td data-label="Site Web">Non spécifié</td>
             </tr>
             <tr>
                 <td data-label="Nom du Restaurant">The Fleece Witney (Proche de Carterton)</td>
-                <td data-label="Téléphone">01993 705126 (example, check website)</td>
                 <td data-label="Page Google"><a href="https://www.google.com/maps/search/The+Fleece+Witney" target="_blank">Voir sur Google Maps</a></td>
                 <td data-label="Note (sur 5)">4.5 (basé sur OpenTable)</td>
                 <td data-label="Site Web"><a href="https://thefleecewitney.co.uk/" target="_blank">thefleecewitney.co.uk</a></td>
@@ -247,11 +236,10 @@
     <table>
         <thead>
             <tr>
-                <th colspan="5" class="city-header">Margate</th>
+                <th colspan="4" class="city-header">Margate</th>
             </tr>
             <tr>
                 <th>Nom du Restaurant</th>
-                <th>Téléphone</th>
                 <th>Page Google</th>
                 <th>Note (sur 5)</th>
                 <th>Site Web</th>
@@ -260,21 +248,18 @@
         <tbody>
             <tr>
                 <td data-label="Nom du Restaurant">Toby Carvery Thanet</td>
-                <td data-label="Téléphone">01843 868567</td>
                 <td data-label="Page Google"><a href="https://www.google.com/maps/search/Toby+Carvery+Thanet+Margate" target="_blank">Voir sur Google Maps</a></td>
                 <td data-label="Note (sur 5)">3.8 (basé sur Google Reviews)</td>
                 <td data-label="Site Web"><a href="https://www.tobycarvery.co.uk/restaurants/south-east/thanetramsgate" target="_blank">tobycarvery.co.uk</a></td>
             </tr>
             <tr>
                 <td data-label="Nom du Restaurant">Colina at The Fort Road Hotel</td>
-                <td data-label="Téléphone">01843 661313</td>
                 <td data-label="Page Google"><a href="https://www.google.com/maps/search/Colina+at+The+Fort+Road+Hotel+Margate" target="_blank">Voir sur Google Maps</a></td>
                 <td data-label="Note (sur 5)">4.4 (basé sur OpenTable/Google Reviews)</td>
                 <td data-label="Site Web"><a href="https://fortroadhotel.com/colina-open-all-day-every-day/" target="_blank">fortroadhotel.com/colina</a></td>
             </tr>
             <tr>
                 <td data-label="Nom du Restaurant">PizzaExpress Margate</td>
-                <td data-label="Téléphone">01843 227666 (example, check website)</td>
                 <td data-label="Page Google"><a href="https://www.google.com/maps/search/PizzaExpress+Margate" target="_blank">Voir sur Google Maps</a></td>
                 <td data-label="Note (sur 5)">4.0 (basé sur Google Reviews)</td>
                 <td data-label="Site Web"><a href="https://www.pizzaexpress.com/margate" target="_blank">pizzaexpress.com</a></td>
